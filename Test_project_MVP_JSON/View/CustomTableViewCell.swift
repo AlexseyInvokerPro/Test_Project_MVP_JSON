@@ -45,6 +45,7 @@ class CustomTableViewCell: UITableViewCell {
         contentView.addSubview(myImageView)
         myImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
+            myImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             myImageView.widthAnchor.constraint(equalToConstant: 150),
             myImageView.heightAnchor.constraint(equalToConstant: 150),
             myImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25),
@@ -56,6 +57,7 @@ class CustomTableViewCell: UITableViewCell {
         contentView.addSubview(myLabel)
         myLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
+            myLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             myLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25),
             myLabel.leftAnchor.constraint(equalTo: myImageView.rightAnchor, constant: 15),
             myLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
